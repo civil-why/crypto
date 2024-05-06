@@ -1,0 +1,21 @@
+
+1. 熟悉1）crypto++的相关接口：从https://www.cryptopp.com/下载crypto++，并在自己的设备上进行安装。
+
+或者2）pycryptodome: pip3 install pycryptodome
+https://www.pycryptodome.org/src/introduction
+
+或者3）cryptography: pip3 install cryptography
+https://cryptography.io/en/latest/
+
+多精度整数库
+gmpy2: pip3 install gmpy2
+https://gmpy2.readthedocs.io/en/latest/index.html
+
+2. 读取文件plaintext.txt，完成以下加密任务：
+
+1)自动生成一对RSA公钥pk和私钥sk，自动生成一个AES加密密钥k，用pk采用RSA加密k得到密文ek，用k采用AES加密plaintext中的内容，采用CBC模式，得到密文et，最后把密文ek和et写到文件cipher-ecb.txt
+
+2)自动生成一对ECDSA的公钥pk和私钥sk，利用sk采用ECDSA数字签名算法对plaintext中的内容进行数字签名，哈希函数采用SH256，并把签名拼到plaintext的后面，写回到plaintext.txt
+
+3)完成如下RSA密码分析任务：
+实验任务见文件:RSA密码分析.docx

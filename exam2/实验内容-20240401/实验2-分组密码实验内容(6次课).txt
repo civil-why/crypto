@@ -1,0 +1,25 @@
+
+1. 熟悉crypto++的相关接口：从https://www.cryptopp.com/下载crypto++，并在自己的设备上进行安装。
+
+或者pycryptodome: pip3 install pycryptodome
+https://www.pycryptodome.org/src/introduction
+
+或者cryptography: pip3 install cryptography
+https://cryptography.io/en/latest/
+
+多精度整数库
+gmpy2: pip3 install gmpy2
+https://gmpy2.readthedocs.io/en/latest/index.html
+
+2. 读取文件plaintext.txt，完成以下加密任务：
+
+1)自动生成一个密钥，用AES对其进行加密，采用ECB模式，并把密文写到文件cipher-ecb.txt
+
+2)自动生成一个密钥，用AES对其进行加密，采用CBC模式，并把密文写到文件cipher-cbc.txt
+
+3)自动生成一个密钥，用AES对其进行加密，采用CTR模式，并把密文写到文件cipher-ctr.txt
+
+对以上得到的三个密文进行解密，对比解密是否正确。
+
+4）自动生成一个认证码密钥，采用HMAC，生成plaintext.txt的认证码，并把认证码拼在plaintext.txt的后面
+5）自动生成一个认证码密钥，采用GMAC，生成plaintext.txt的认证码，并把认证码拼在plaintext.txt的后面
